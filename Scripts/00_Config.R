@@ -53,7 +53,7 @@
   #                          username = datim_user(),
   #                          password = datim_pwd())
 
-  # Files
+  # Files - MSD
 
   file_nat <- si_path() %>% return_latest("NAT_SUBNAT")
   file_psnu <- si_path() %>% return_latest("PSNU_IM_FY22")
@@ -61,5 +61,3 @@
   file_psnu2 <- si_path() %>% return_latest(glue("PSNU_IM_FY22-.*_{ou}"))
   file_site1 <- si_path() %>% return_latest(glue("Site_IM_FY15-.*_{ou}"))
   file_site2 <- si_path() %>% return_latest(glue("Site_IM_FY22-.*_{ou}"))
-
-
